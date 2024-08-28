@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +15,10 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
+        
             width: 500px;
             color: rgb(71, 71, 71);
             font-size: larger;
-            justify-content: center;
             align-items: center;
             margin-top: 150px;
             display: flex;
@@ -54,12 +54,11 @@
         #lName{
             justify-content: center;
             height: 25px;
-            
-           margin: 5px;
+            margin: 5px;
            padding: 4px;
         }
         #email{
-            justify-content: center;
+            justify-content: left;
             height: 25px;
            margin: 5px;
            padding: 4px;
@@ -82,36 +81,48 @@
             color: white;
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        .input-group{
+            align-content: flex-start;
+            
+        }
         </style>
 </head>
 <body style="background-image: url(bg.jpg);">
 <h2 id="questhive"><strong>QUESTHIVE</strong></h2>
     <center>
+    
     <div class="container" id="signup">
-      <h1 class="form-title">Trainer Register</h1>
+      <h1 style="text-align: center;" class="form-title">Trainer Register</h1>
       <form method="post" action="register.php">
+       <table><tr>
         <div class="input-group">
-           <i class="fas fa-user"></i>
-           <input type="text" name="fName" id="fName" placeholder="First Name" required>
-           <label for="fname">First Name</label>
+           <td><i class="fas fa-user"></i></td>
+           <td><input type="text" name="fName" id="fName" placeholder="First Name" required></td>
+           <td><label for="fname">First Name</label></td>
         </div>
+    </tr><tr>
         <div class="input-group">
-            <i class="fas fa-user"></i>
-            <input type="text" name="lName" id="lName" placeholder="Last Name" required>
-            <label for="lName">Last Name</label>
+            <td><i class="fas fa-user"></i></td>
+            <td><input type="text" name="lName" id="lName" placeholder="Last Name" required></td>
+            <td><label for="lName">Last Name</label></td>
+        
+    </div></tr>
+    <tr>
+        <div   class="input-group">
+            <td><i class="fas fa-envelope" style="align-self: self-end;"></i></td>
+            <td><input style="align-self: self-end;" type="email" name="email" id="email" placeholder="Email" required></td>
+            <td><label style="align-self: self-end;" for="email"> E-mail</label></td>
         </div>
-        <div class="input-group">
-            <i class="fas fa-envelope"></i>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <label for="email">Email</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-lock"></i>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <label for="password">Password</label>
-        </div>
+    </tr> <tr>
+        <div class="input-group" >
+            <td><i class="fas fa-lock" ></i></td>
+            <td><input type="password" name="password" id="password" placeholder="Password" required></td>
+            <td><label for="password">Password</label></td>
+        </div></tr></table>
        <input type="submit" class="btn" value="Add Trainer" name="signUp">
       </form>
-    </div></center>
+    </div>
+</center>
 </body>
 </html>
