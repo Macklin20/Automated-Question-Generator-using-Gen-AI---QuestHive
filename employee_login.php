@@ -63,16 +63,16 @@
 <div class="container" id="signIn">
         <h1 class="form-title">Sign In</h1>
         <form method="post" action="eregister.php">
-          <div class="input-group">
-              <i class="fas fa-envelope"></i>
-              <input type="email" name="email" id="email" placeholder="Email" required>
-              <label for="email">Email</label>
-          </div>
-          <div class="input-group">
-              <i class="fas fa-lock"></i>
-              <input type="password" name="password" id="password" placeholder="Password" required>
-              <label for="password">Password</label>
-          </div>
+         <table><tr> <div class="input-group">
+             <td> <i class="fas fa-envelope"></i></td>
+              <td><input type="email" name="email" id="email" placeholder="Email" required></td>
+              <td><label for="email">Email</label></td>
+          </div></tr>
+          <tr><div class="input-group">
+             <td><i class="fas fa-lock"></i></td>
+             <td> <input type="password" name="password" id="password" placeholder="Password" required></td>
+              <td><label for="password">Password</label></td>
+          </div></tr></table>
           <p class="recover">
             <a href="#" style="color: rgb(98, 97, 97);">Recover Password</a>
           </p>
