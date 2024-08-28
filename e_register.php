@@ -85,34 +85,40 @@
     </style>
 </head>
 <body style="background-image: url(bg.jpg);">
-<h2 id="questhive"><strong>QUESTHIVE</strong></h2>
-    <center>
-    <div class="container" id="signup">
-      <h1 class="form-title">Employee Register</h1>
-      <form method="post" action="eregister.php">
-        <div class="input-group">
-           <i class="fas fa-user"></i>
-           <input type="text" name="fName" id="fName" placeholder="First Name" required>
-           <label for="fname">First Name</label>
+    <h2 id="questhive"><strong>QUESTHIVE</strong></h2>
+        <center>
+        
+        <div class="container" id="signup">
+          <h1 style="text-align: center;" class="form-title">Employee Register</h1>
+          <form method="post" action="register.php">
+           <table><tr>
+            <div class="input-group">
+               <td><i class="fas fa-user"></i></td>
+               <td><input type="text" name="fName" id="fName" placeholder="First Name" required></td>
+               <td><label for="fname">First Name</label></td>
+            </div>
+        </tr><tr>
+            <div class="input-group">
+                <td><i class="fas fa-user"></i></td>
+                <td><input type="text" name="lName" id="lName" placeholder="Last Name" required></td>
+                <td><label for="lName">Last Name</label></td>
+            
+        </div></tr>
+        <tr>
+            <div   class="input-group">
+                <td><i class="fas fa-envelope" style="align-self: self-end;"></i></td>
+                <td><input style="align-self: self-end;" type="email" name="email" id="email" placeholder="Email" required></td>
+                <td><label style="align-self: self-end;" for="email"> E-mail</label></td>
+            </div>
+        </tr> <tr>
+            <div class="input-group" >
+                <td><i class="fas fa-lock" ></i></td>
+                <td><input type="password" name="password" id="password" placeholder="Password" required></td>
+                <td><label for="password">Password</label></td>
+            </div></tr></table>
+           <input type="submit" class="btn" value="Add Employee" name="signUp">
+          </form>
         </div>
-        <div class="input-group">
-            <i class="fas fa-user"></i>
-            <input type="text" name="lName" id="lName" placeholder="Last Name" required>
-            <label for="lName">Last Name</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-envelope"></i>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <label for="email">Email</label>
-        </div>
-        <div class="input-group">
-            <i class="fas fa-lock"></i>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <label for="password">Password</label>
-        </div>
-       <input type="submit" class="btn" value="Add Trainer" name="signUp">
-      </form>
-    </div>
     </center>
-</body>
+    </body>
 </html>
